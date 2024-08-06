@@ -35,7 +35,7 @@
 
     <div class="row">
         <div class="mb-3">
-            <button type="button" class="btn btn-primary" @onclick="SummariseAsync">Summarise!</button>
+            <button type="button" class="btn btn-primary" id="summary" @onclick="SummariseAsync">Summarise!</button>
             <button type="button" class="btn btn-secondary" @onclick="ClearAsync">Clear!</button>
         </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="mb-3">
             <label for="summary" class="form-label"><strong>Summary</strong></label>
-            <textarea class="form-control" id="summary" rows="10" placeholder="Result will show here" readonly>@summaryResult</textarea>
+            <textarea class="form-control" id="result" rows="10" placeholder="Result will show here" readonly>@summaryResult</textarea>
         </div>
     </div>
 </div>
